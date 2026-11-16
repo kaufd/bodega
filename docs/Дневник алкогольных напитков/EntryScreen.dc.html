@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</helmet>
+
+<div style="width:384px;height:812px;border-radius:44px;background:#2b2622;padding:10px;box-shadow:0 44px 90px rgba(46,38,32,0.32);font-family:'Spectral',Georgia,serif;color:#2E2620;">
+  <div style="width:100%;height:100%;border-radius:35px;overflow:hidden;background:#F4ECDB;display:flex;flex-direction:column;position:relative;">
+    <!-- status bar -->
+    <div style="height:44px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#2E2620;">
+      <span>21:30</span>
+      <span style="display:flex;align-items:center;gap:7px;"><svg width="16" height="12" viewBox="0 0 16 12" fill="#2E2620"><path d="M8 11.5L0.7 4.2a10.3 10.3 0 0114.6 0L8 11.5z" opacity="0.9"/></svg><span>88</span><span style="display:inline-block;width:20px;height:11px;border:1.5px solid #2E2620;border-radius:3px;position:relative;"><span style="position:absolute;inset:1.5px;right:5px;background:#2E2620;border-radius:1px;"></span></span></span>
+    </div>
+    <!-- top bar -->
+    <div style="flex:none;display:flex;align-items:center;justify-content:space-between;padding:8px 20px 12px;min-height:44px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E2620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 6 5 12 11 18"/></svg>
+      <sc-if value="{{ editTopbar }}" hint-placeholder-val="{{ false }}">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:oklch(0.48 0.11 25);display:flex;align-items:center;gap:6px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="oklch(0.48 0.11 25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18 10l-4-4L4 16z"/><line x1="13" y1="7" x2="17" y2="11"/></svg>
+          Править
+        </span>
+      </sc-if>
+      <sc-if value="{{ moreMenu }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:4px;align-items:center;"><span style="width:4px;height:4px;border-radius:50%;background:#2E2620;"></span><span style="width:4px;height:4px;border-radius:50%;background:#2E2620;"></span><span style="width:4px;height:4px;border-radius:50%;background:#2E2620;"></span></div>
+      </sc-if>
+    </div>
+    <!-- scroll -->
+    <div style="flex:1;overflow:auto;padding:0 0 20px;">
+      <!-- hero photo (reduced) -->
+      <div style="height:200px;margin:0 22px;border-radius:16px;background:#EBD9D3;background-image:repeating-linear-gradient(135deg,rgba(122,74,68,0.07) 0 9px,transparent 9px 18px);position:relative;display:flex;align-items:flex-end;padding:12px;overflow:hidden;">
+        <span style="position:absolute;top:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;background:rgba(46,38,32,0.9);color:#F4ECDB;padding:5px 11px;border-radius:999px;">Вино</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:1px;color:rgba(122,74,68,0.75);background:rgba(251,246,236,0.72);padding:4px 8px;border-radius:6px;">ФОТО · 1600×2000</span>
+      </div>
+      <!-- title -->
+      <div style="padding:18px 22px 0;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:31px;font-weight:700;line-height:1.05;">Barolo Riserva 2016</div>
+        <div style="font-size:14px;color:#6B5D4E;margin-top:6px;">Неббиоло · красное сухое · Италия</div>
+      </div>
+      <!-- rating -->
+      <div style="margin:18px 22px 0;background:#FBF6EC;border:1px solid rgba(46,38,32,0.08);border-radius:16px;padding:16px;box-shadow:0 8px 22px rgba(46,38,32,0.05);display:flex;align-items:center;gap:16px;">
+        <div style="text-align:center;flex:none;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:40px;line-height:1;color:oklch(0.48 0.11 25);">9</span><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#9A8B78;">/10</span>
+        </div>
+        <div style="flex:1;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9A8B78;margin-bottom:8px;">Моя оценка</div>
+          <div style="display:flex;gap:4px;">
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:oklch(0.48 0.11 25);"></span>
+            <span style="flex:1;height:8px;border-radius:2px;background:rgba(46,38,32,0.14);"></span>
+          </div>
+        </div>
+      </div>
+      <!-- characteristics -->
+      <div style="margin:22px 22px 0;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9A8B78;margin-bottom:6px;">Характеристики</div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Сорт</span><span style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;">Неббиоло</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Тип</span><span style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;">Красное, сухое</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Страна</span><span style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;">Италия · Пьемонт</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Год</span><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;">2016</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Крепость</span><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;">14 %</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(46,38,32,0.1);"><span style="font-size:14.5px;color:#6B5D4E;">Цена покупки</span><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;">8 900 ₽</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;"><span style="font-size:14.5px;color:#6B5D4E;">Дата дегустации</span><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;">12 мар 2026</span></div>
+      </div>
+      <!-- note -->
+      <div style="margin:14px 22px 0;background:#FBF6EC;border:1px solid rgba(46,38,32,0.08);border-radius:16px;padding:16px 18px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9A8B78;margin-bottom:9px;">Заметка</div>
+        <div style="font-style:italic;font-size:15px;line-height:1.6;color:#3E362E;">«Букет из вяленой розы, дёгтя и сушёной вишни. Плотный танин, высокая кислотность, долгое послевкусие с нотами трюфеля. Ещё молодое — дать полежать 3–5 лет.»</div>
+      </div>
+      <!-- inline edit -->
+      <sc-if value="{{ editInline }}" hint-placeholder-val="{{ false }}">
+        <div style="margin:16px 22px 0;">
+          <div style="border:1.5px solid #2E2620;color:#2E2620;border-radius:14px;padding:14px;text-align:center;display:flex;align-items:center;justify-content:center;gap:9px;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2E2620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18 10l-4-4L4 16z"/><line x1="13" y1="7" x2="17" y2="11"/></svg>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;">Редактировать запись</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ editBottom }}" hint-placeholder-val="{{ false }}"><div style="height:116px;"></div></sc-if>
+      <sc-if value="{{ editFab }}" hint-placeholder-val="{{ false }}"><div style="height:34px;"></div></sc-if>
+    </div>
+    <!-- FAB edit -->
+    <sc-if value="{{ editFab }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;right:20px;bottom:40px;width:56px;height:56px;border-radius:50%;background:#2E2620;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(46,38,32,0.35);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4ECDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18 10l-4-4L4 16z"/><line x1="13" y1="7" x2="17" y2="11"/></svg>
+      </div>
+    </sc-if>
+    <!-- bottom bar edit -->
+    <sc-if value="{{ editBottom }}" hint-placeholder-val="{{ false }}">
+      <div style="flex:none;position:absolute;left:0;right:0;bottom:0;padding:14px 20px 24px;background:linear-gradient(to top,#F4ECDB 72%,rgba(244,236,219,0));">
+        <div style="background:#2E2620;color:#F4ECDB;border-radius:16px;padding:16px;text-align:center;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 12px 26px rgba(46,38,32,0.28);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F4ECDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L18 10l-4-4L4 16z"/><line x1="13" y1="7" x2="17" y2="11"/></svg>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;">Редактировать</span>
+        </div>
+      </div>
+    </sc-if>
+    <!-- gesture pill -->
+    <div style="position:absolute;left:50%;bottom:9px;transform:translateX(-50%);width:120px;height:5px;border-radius:3px;background:rgba(46,38,32,0.35);z-index:2;"></div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:384,&quot;height&quot;:812},&quot;edit&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;bottom&quot;,&quot;topbar&quot;,&quot;fab&quot;,&quot;inline&quot;],&quot;default&quot;:&quot;topbar&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const edit = this.props.edit || 'bottom';
+    return {
+      editBottom: edit === 'bottom',
+      editTopbar: edit === 'topbar',
+      editFab: edit === 'fab',
+      editInline: edit === 'inline',
+      moreMenu: edit !== 'topbar',
+    };
+  }
+}
+</script>
+</body>
+</html>

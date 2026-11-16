@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Цвет не меняется к краям, поэтому маска лаунчера не выглядит как второе кольцо. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFDDECF4" />
+</shape>

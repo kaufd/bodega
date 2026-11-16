@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Фон окна на запуске: то же, что рисует Modifier.ambientBackground() —
+     холодная бумага с тёплыми пятнами по углам. Значения совпадают с ним,
+     менять надо в обоих местах. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path android:pathData="M0,0h100v100h-100z" android:fillColor="#FFF1F7FA" />
+
+    <!-- TealBright, alpha .22, центр (-.08, .28), радиус .72 -->
+    <path android:pathData="M0,0h100v100h-100z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial"
+                android:centerX="-8" android:centerY="28" android:gradientRadius="72">
+                <item android:offset="0" android:color="#3850B8C0" />
+                <item android:offset="1" android:color="#0050B8C0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Coral, alpha .18, центр (1.08, .58), радиус .68 -->
+    <path android:pathData="M0,0h100v100h-100z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial"
+                android:centerX="108" android:centerY="58" android:gradientRadius="68">
+                <item android:offset="0" android:color="#2EFF826A" />
+                <item android:offset="1" android:color="#00FF826A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Rating, alpha .14, центр (.45, .84), радиус .62 -->
+    <path android:pathData="M0,0h100v100h-100z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial"
+                android:centerX="45" android:centerY="84" android:gradientRadius="62">
+                <item android:offset="0" android:color="#24FFB74D" />
+                <item android:offset="1" android:color="#00FFB74D" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

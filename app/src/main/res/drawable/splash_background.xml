@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Окно на запуске для Android 11 и ниже: системного splash там нет, и без
+     этого слоя на старте видна пустая заливка. Надпись рисуем здесь же — на
+     12+ её показывает системный splash, а это окно берётся из drawable-v31,
+     без надписи.
+
+     Почему развилка: стартовое окно системы лежит под статус-баром, а после
+     enableEdgeToEdge() то же окно занимает весь экран — общая для всех версий
+     надпись прыгала бы на половину высоты статус-бара между splash и первым
+     кадром Compose. Совместить их нельзя: это разные окна с разными вставками. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/splash_ambient" />
+    <item android:drawable="@drawable/splash_title" android:gravity="center" />
+</layer-list>

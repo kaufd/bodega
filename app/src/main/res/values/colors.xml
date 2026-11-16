@@ -1,0 +1,4 @@
+<resources>
+    <!-- BodegaColors.Paper — база фона экранов. -->
+    <color name="paper">#FFF1F7FA</color>
+</resources>

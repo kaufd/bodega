@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Временные снимки камеры до импорта во внутреннее хранилище. -->
+    <cache-path name="camera" path="camera/" />
+    <!-- Фотографии записей — чтобы отдавать их наружу при шэринге. -->
+    <files-path name="photos" path="photos/" />
+</paths>

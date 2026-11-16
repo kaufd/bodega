@@ -1,0 +1,18 @@
+<resources>
+    <style name="Theme.Bodega" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Стартовый экран — обложка: иконки статус-бара светлые. Экраны на
+             светлом фоне переключают их сами (StatusBarIcons). -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Окно на запуске — тот же фон, что у экранов (ambientBackground):
+             на Android 11 и ниже это и есть splash, на 12+ — окно под ним,
+             чтобы между splash и первым кадром не мелькала белая заливка. -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <!-- Android 12+ рисует splash только сплошным цветом, градиент туда
+             не положить: берём базовую бумагу из ambientBackground. -->
+        <item name="android:windowSplashScreenBackground">@color/paper</item>
+        <!-- Надпись вместо иконки: система кладёт её в круг 192dp по центру
+             канваса 288dp, под этот круг она и свёрстана. На Android 11 и ниже
+             атрибут игнорируется, там надпись лежит в splash_background. -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_title</item>
+    </style>
+</resources>

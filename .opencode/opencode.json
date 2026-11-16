@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "@osovv/vv-opencode@1.0.0"
+  ],
+  "model": "vv-role:default",
+  "small_model": "vv-role:fast",
+  "default_agent": "vv-controller",
+  "tools": {
+    "apply_patch": false
+  },
+  "agent": {
+    "explore": {
+      "model": "vv-role:fast"
+    },
+    "vv-controller": {
+      "description": "Default vvoc workflow controller for routing, implementation, review, and verification.",
+      "mode": "primary",
+      "prompt": "{file:../.vvoc/agents/vv-controller.md}",
+      "model": "vv-role:smart"
+    },
+    "enhancer": {
+      "description": "Turns raw user intent into a structured XML prompt for a follow-up agent.",
+      "mode": "primary",
+      "prompt": "{file:../.vvoc/agents/enhancer.md}",
+      "model": "vv-role:smart",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny",
+        "task": "deny",
+        "todowrite": "deny"
+      }
+    },
+    "vv-implementer": {
+      "description": "Implements approved changes with focused verification and a minimal diff.",
+      "mode": "subagent",
+      "prompt": "{file:../.vvoc/agents/vv-implementer.md}",
+      "model": "vv-role:default"
+    },
+    "vv-spec-reviewer": {
+      "description": "Checks an implementation against the requested spec and flags missing or extra behavior.",
+      "mode": "subagent",
+      "prompt": "{file:../.vvoc/agents/vv-spec-reviewer.md}",
+      "model": "vv-role:reviewer",
+      "permission": {
+        "edit": "deny"
+      }
+    },
+    "vv-code-reviewer": {
+      "description": "Reviews changes for bugs, regressions, maintainability risks, and missing tests.",
+      "mode": "subagent",
+      "prompt": "{file:../.vvoc/agents/vv-code-reviewer.md}",
+      "model": "vv-role:reviewer",
+      "permission": {
+        "edit": "deny"
+      }
+    },
+    "investigator": {
+      "description": "Investigates bugs and unclear behavior before implementation work begins.",
+      "mode": "subagent",
+      "prompt": "{file:../.vvoc/agents/investigator.md}",
+      "model": "vv-role:smart",
+      "permission": {
+        "edit": "deny"
+      }
+    }
+  },
+  "skills": {
+    "paths": [
+      "../.vvoc/skills"
+    ]
+  }
+}

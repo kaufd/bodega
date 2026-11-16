@@ -1,0 +1,15 @@
+.DS_Store
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+.worktrees/
+.env
+keystore.properties
+*.jks
+*.keystore
+
+# Локальные личные данные и инструменты импорта.
+docs/vinewoman_export/

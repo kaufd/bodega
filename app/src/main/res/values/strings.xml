@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погребок</string>
+
+    <!-- Короткий экран между системной заставкой и главным экраном -->
+
+    <!-- Вино -->
+    <string name="quote_wine_galileo">Вино — это солнечный свет, удержанный водой.</string>
+    <string name="quote_wine_galileo_author">Галилео Галилей</string>
+    <string name="quote_wine_stevenson">Вино — поэзия в бутылке.</string>
+    <string name="quote_wine_stevenson_author">Роберт Льюис Стивенсон</string>
+    <string name="quote_wine_pliny">Истина — в вине.</string>
+    <string name="quote_wine_pliny_author">Плиний Старший</string>
+    <string name="quote_wine_horace">Стихи, написанные любителями воды, долго не живут.</string>
+    <string name="quote_wine_horace_author">Гораций</string>
+    <string name="quote_wine_bacon">Старое вино пьют, старым друзьям доверяют, старых авторов читают.</string>
+    <string name="quote_wine_bacon_author">Фрэнсис Бэкон</string>
+    <string name="quote_wine_shakespeare">Вино — добрый товарищ, если обращаться с ним разумно.</string>
+    <string name="quote_wine_shakespeare_author">Уильям Шекспир</string>
+    <string name="quote_wine_aristophanes">Несите чашу вина: смочу ум и скажу что-нибудь умное.</string>
+    <string name="quote_wine_aristophanes_author">Аристофан</string>
+
+    <!-- Пиво -->
+    <string name="quote_beer_poe">Пусть время идёт — сегодня я пью эль.</string>
+    <string name="quote_beer_poe_author">Эдгар Аллан По</string>
+    <string name="quote_beer_housman">Солод не хуже поэзии оправдывает пути Господни.</string>
+    <string name="quote_beer_housman_author">Альфред Хаусман</string>
+    <string name="quote_beer_henry">Я отдал бы всю славу за кружку эля и безопасность.</string>
+    <string name="quote_beer_henry_author">Уильям Шекспир</string>
+    <string name="quote_beer_german">Пиво — жидкий хлеб.</string>
+    <string name="quote_beer_german_author">Немецкая поговорка</string>
+    <string name="quote_beer_english">Хороший эль и кошку заставит заговорить.</string>
+    <string name="quote_beer_english_author">Английская поговорка</string>
+    <string name="quote_beer_king">Кварта эля — угощение для короля.</string>
+    <string name="quote_beer_king_author">Уильям Шекспир</string>
+    <string name="quote_beer_hops">Хмель и солод — да хранит их Бог.</string>
+    <string name="quote_beer_hops_author">Немецкая поговорка</string>
+
+    <!-- Крепкие напитки -->
+    <string name="quote_spirit_shaw">Виски — это жидкий солнечный свет.</string>
+    <string name="quote_spirit_shaw_author">Бернард Шоу</string>
+    <string name="quote_spirit_twain">Слишком много хорошего виски — едва ли достаточно.</string>
+    <string name="quote_spirit_twain_author">Марк Твен</string>
+    <string name="quote_spirit_fields">Всегда носите с собой виски на случай укуса змеи — и маленькую змею.</string>
+    <string name="quote_spirit_fields_author">Уильям Клод Филдс</string>
+    <string name="quote_spirit_burns">Свобода и виски идут вместе.</string>
+    <string name="quote_spirit_burns_author">Роберт Бёрнс</string>
+    <string name="quote_spirit_remarque">Это будет кальвадос с привкусом мечты о совсем другом кальвадосе.</string>
+    <string name="quote_spirit_remarque_author">Эрих Мария Ремарк</string>
+    <string name="quote_spirit_irish">Чего не вылечит виски, то уже неизлечимо.</string>
+    <string name="quote_spirit_irish_author">Ирландская поговорка</string>
+    <string name="quote_spirit_bi2">Какой русский не пьёт виски?</string>
+    <string name="quote_spirit_bi2_author">Би-2</string>
+
+    <!-- Общие / Категории -->
+    <string name="all">Все</string>
+    <string name="retry">Повторить</string>
+    <string name="back">Назад</string>
+    <string name="category_all">Все категории</string>
+    <string name="category_wine">Вино</string>
+    <string name="category_beer">Пиво</string>
+    <string name="category_spirit">Крепкое</string>
+
+    <!-- Главный экран (ListScreen) -->
+    <string name="header_title">Погребок</string>
+    <string name="header_subtitle">Личная коллекция</string>
+    <string name="header_recipes_subtitle">Рецепты</string>
+    <string name="cocktail_hero_subtitle">Любимые рецепты под рукой</string>
+    <string name="header_greeting_night">Доброй ночи</string>
+    <string name="header_greeting_morning">Доброе утро</string>
+    <string name="header_greeting_day">Добрый день</string>
+    <string name="header_greeting_evening">Добрый вечер</string>
+    <string name="header_tagline">Ваш погреб\nв одном месте</string>
+    <string name="search_placeholder">Найти напиток</string>
+    <string name="scan_label">Сканировать этикетку</string>
+    <string name="scan_in_progress">Распознавание…</string>
+    <string name="photo_search_hint">по фото · неточные совпадения</string>
+    <string name="featured_eyebrow">Выбор из коллекции</string>
+    <string name="featured_title">Последняя дегустация</string>
+    <string name="cocktail_collection_title">Все рецепты</string>
+    <string name="collection_title">В погребе</string>
+    <string name="collection_more">ЕЩЁ %d</string>
+    <string name="view_grid">Плитка</string>
+    <string name="view_list">Компактный список</string>
+    <string name="sort_description">Сортировка: %s</string>
+    <string name="sort_rating">Балл</string>
+    <string name="sort_price">Цена</string>
+    <string name="sort_date">Дата</string>
+    <string name="add_entry_short">Добавить</string>
+    <string name="photo_placeholder">ФОТО</string>
+    <string name="delete_snackbar">Запись «%s» удалена</string>
+    <string name="delete_snackbar_undo">Отменить</string>
+    <string name="home_filters_active">Фильтры · %1$d</string>
+    <string name="home_filters_reset">Сбросить</string>
+    <string name="search_clear">Очистить поиск</string>
+    <string name="filters_open">Фильтры</string>
+    <string name="add_entry">Добавить запись</string>
+    <string name="entry_photo">Фото записи «%s»</string>
+    <string name="list_load_failed">Не удалось загрузить журнал</string>
+
+    <!-- Пустые состояния (EmptyState) -->
+    <string name="empty_collection_title">Погреб пока пуст</string>
+    <string name="empty_collection_text">Заведите первую запись — вино, пиво или крепкое, — и она появится в вашем журнале дегустаций.</string>
+    <string name="empty_collection_button">Добавить первую запись</string>
+    <string name="empty_category_title">В разделе «%s» пусто</string>
+    <string name="empty_category_text">Здесь появятся ваши записи. Добавьте первую, чтобы начать вести раздел.</string>
+    <string name="empty_category_add_wine">Добавить вино</string>
+    <string name="empty_category_add_beer">Добавить пиво</string>
+    <string name="empty_category_add_spirit">Добавить напиток</string>
+    <string name="empty_search_title">Ничего не найдено</string>
+    <string name="empty_search_text">По запросу «%s» с текущими фильтрами записей нет. Попробуйте изменить запрос или сбросить фильтры.</string>
+    <string name="empty_search_button">Сбросить фильтры</string>
+
+    <!-- Карточка записи (DetailScreen) -->
+    <string name="detail_share">Поделиться записью</string>
+    <string name="detail_edit">Править запись</string>
+    <string name="detail_delete">Удалить</string>
+    <string name="detail_delete_title">Удалить запись?</string>
+    <string name="detail_delete_text">«%s» будет удалена. Отменить можно будет сразу после удаления.</string>
+    <string name="detail_cancel">Отмена</string>
+    <string name="detail_not_found">Запись не найдена</string>
+    <string name="detail_delete_failed">Не удалось удалить запись</string>
+    <string name="detail_load_failed">Не удалось прочитать запись</string>
+    <string name="photo_open">Открыть фото</string>
+    <string name="scan_failed">Не удалось распознать этикетку</string>
+    <string name="scan_empty">Текст на этикетке не распознан</string>
+    <string name="undo_failed">Не удалось восстановить запись</string>
+
+    <!--
+      Отказы облачного распознавания. Показываются и при скане этикетки, и при
+      черновике заметки, поэтому про этикетку не упоминают: причина у обоих одна.
+    -->
+    <string name="recognition_disabled">Включите распознавание в настройках</string>
+    <string name="recognition_auth_failed">Ключ не подошёл — проверьте его в настройках</string>
+    <string name="recognition_no_credits">На счёте OpenRouter закончились средства</string>
+    <string name="recognition_model_failed">Модель не подошла — проверьте её в настройках</string>
+    <string name="recognition_busy">Сервис занят, попробуйте ещё раз</string>
+    <string name="recognition_offline">Нет соединения — сервис недоступен</string>
+    <string name="recognition_no_data">Описаний этого напитка в сети не нашлось</string>
+    <string name="recognition_failed">Не удалось получить ответ модели</string>
+
+    <!-- Характеристики (DetailScreen) -->
+    <string name="char_grape">Сорт</string>
+    <string name="char_type">Тип</string>
+    <string name="char_color">Цвет</string>
+    <string name="char_sweetness">Сладость</string>
+    <string name="char_country">Страна</string>
+    <string name="char_vintage">Год урожая</string>
+    <string name="char_bottling">Год розлива</string>
+    <string name="char_serving_temp">Температура подачи</string>
+    <string name="char_style">Стиль</string>
+    <string name="char_abv">Крепость</string>
+    <string name="char_price">Цена покупки</string>
+    <string name="char_tasted_at">Дата дегустации</string>
+    <string name="char_my_rating">Моя оценка</string>
+    <string name="char_note">Заметка</string>
+    <string name="char_characteristics">Характеристики</string>
+
+    <!-- Редактор (EditScreen) -->
+    <string name="edit_cancel">Отмена</string>
+    <string name="edit_new">Новая запись</string>
+    <string name="edit_edit">Правка</string>
+    <string name="edit_save">Сохранить запись</string>
+    <string name="edit_name_placeholder">Например, Barolo 2018</string>
+    <string name="edit_note_placeholder">Впечатления от дегустации</string>
+    <string name="edit_rating_hint">Перетащите ползунок</string>
+    <string name="edit_photo_add">Добавить фото этикетки</string>
+    <string name="edit_note_draft">Написать черновик заметки</string>
+    <string name="edit_note_drafting">Пишу черновик…</string>
+    <string name="edit_note_overwrite_title">Заменить заметку?</string>
+    <string name="edit_note_overwrite_text">Написанный черновик заменит текущий текст заметки.</string>
+    <string name="edit_note_overwrite_confirm">Заменить</string>
+    <string name="edit_exit_title">Выйти без сохранения?</string>
+    <string name="edit_exit_text">Изменения будут потеряны.</string>
+    <string name="edit_exit_confirm">Выйти</string>
+    <string name="edit_exit_stay">Остаться</string>
+    <string name="edit_add_photo">Добавить фото</string>
+    <string name="edit_replace_photo">Заменить фото</string>
+    <string name="edit_photo_description">Фото записи</string>
+    <string name="photo_source_title">Добавить фото</string>
+    <string name="photo_source_camera">Снять на камеру</string>
+    <string name="photo_source_gallery">Выбрать из галереи</string>
+    <string name="photo_import_failed">Не удалось добавить фото</string>
+    <string name="edit_photo_actions">Действия с фотографией</string>
+    <string name="edit_photo_menu_title">Фотография</string>
+    <string name="edit_photo_make_cover">Сделать обложкой</string>
+    <string name="edit_photo_delete">Удалить фото</string>
+    <string name="edit_photo_cover">Обложка</string>
+    <string name="edit_photo_position">Фото %1$d из %2$d</string>
+    <string name="entry_photo_position">Фото %1$d из %2$d, запись «%3$s»</string>
+    <string name="edit_name">Название *</string>
+    <string name="edit_grape">Сорт</string>
+    <string name="edit_type">Тип</string>
+    <string name="edit_color">Цвет</string>
+    <string name="edit_sweetness">Сладость</string>
+    <string name="edit_country">Страна</string>
+    <string name="edit_vintage">Урожай</string>
+    <string name="edit_bottling">Розлив</string>
+    <string name="edit_serving_temp">Температура подачи</string>
+    <string name="edit_style">Стиль</string>
+    <string name="edit_style_placeholder">Выберите стиль</string>
+    <string name="select_placeholder">Выберите</string>
+    <string name="select_input_placeholder">Начните вводить</string>
+    <string name="select_input_hint">Найти или ввести своё</string>
+    <string name="edit_abv" formatted="false">Крепость, %</string>
+    <string name="edit_price">Цена, ₽</string>
+    <string name="edit_rating">Моя оценка</string>
+    <string name="edit_rating_none">не задана</string>
+    <string name="edit_rating_clear">убрать</string>
+    <string name="edit_note">Заметка</string>
+    <string name="edit_tasted_at_placeholder">Выберите дату</string>
+    <string name="edit_tasted_at_confirm">Готово</string>
+    <string name="edit_tasted_at_clear">Убрать</string>
+    <string name="edit_not_found">Запись не найдена</string>
+    <string name="edit_load_failed">Не удалось прочитать запись</string>
+    <string name="edit_save_failed">Не удалось сохранить. Попробуйте ещё раз</string>
+    <string name="edit_abv_invalid">Крепость — от %1$d до %2$d %%</string>
+    <string name="edit_abv_not_a_number">Крепость — число, например 13,5</string>
+
+    <!-- Фильтры (FiltersScreen) -->
+    <string name="filters_title">Фильтры</string>
+    <string name="filters_reset">Сброс</string>
+    <string name="filters_category">Категория</string>
+    <string name="filters_color">Цвет</string>
+    <string name="filters_type">Тип</string>
+    <string name="filters_style">Стиль</string>
+    <string name="filters_style_all">Все стили</string>
+    <string name="filters_country_all">Все страны</string>
+    <string name="filters_search_hint">Найти в списке</string>
+    <string name="filters_sweetness">Сладость</string>
+    <string name="filters_rating">Оценка</string>
+    <string name="filters_price">Цена покупки, ₽</string>
+    <string name="filters_country">Страна</string>
+    <string name="filters_sort">Сортировка</string>
+    <string name="filters_price_from">от</string>
+    <string name="filters_price_to">до</string>
+    <string name="filters_sort_rating">По баллам</string>
+    <string name="filters_sort_price">По цене</string>
+    <string name="filters_sort_date">По дате</string>
+    <string name="filters_load_failed">Справочники недоступны — фильтр применится по введённым значениям</string>
+
+    <!-- Настройки и копия журнала -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_open">Открыть настройки</string>
+    <string name="settings_backup_section">Копия журнала</string>
+    <string name="settings_export">Сохранить копию</string>
+    <string name="settings_export_hint">Все записи и фотографии в одном файле</string>
+    <string name="settings_import">Восстановить из копии</string>
+    <string name="settings_import_hint">Добавит записи из файла, ничего не удаляя</string>
+    <string name="settings_recognition_section">Распознавание</string>
+    <string name="settings_recognition_toggle">Распознавание через LLM</string>
+    <string name="settings_recognition_toggle_hint">Фото этикетки и данные записи уходят в OpenRouter</string>
+    <string name="settings_recognition_key">Ключ OpenRouter</string>
+    <string name="settings_recognition_key_hint">Создаётся на openrouter.ai/keys</string>
+    <string name="settings_recognition_key_show">Показать ключ</string>
+    <string name="settings_recognition_key_hide">Скрыть ключ</string>
+    <string name="settings_recognition_model">Модель</string>
+    <string name="settings_recognition_model_hint">Например, vendor/model-name</string>
+    <string name="backup_file_name">bodega-%1$s.zip</string>
+    <string name="backup_exported">Копия сохранена</string>
+    <string name="backup_imported_all_known">Все записи из файла уже есть в журнале</string>
+    <string name="backup_imported_empty">В файле нет записей</string>
+    <string name="backup_imported_with_skipped">Добавлено %1$d, пропущено дублей: %2$d</string>
+    <string name="backup_wrong_format">Это не архив дневника</string>
+    <string name="backup_failed">Не удалось прочитать или записать файл</string>
+
+    <!-- Множественное число -->
+    <plurals name="header_recipe_count_label">
+        <item quantity="one">рецепт</item>
+        <item quantity="few">рецепта</item>
+        <item quantity="many">рецептов</item>
+        <item quantity="other">рецептов</item>
+    </plurals>
+    <plurals name="header_count_label">
+        <item quantity="one">напиток</item>
+        <item quantity="few">напитка</item>
+        <item quantity="many">напитков</item>
+        <item quantity="other">напитка</item>
+    </plurals>
+    <plurals name="segment_description">
+        <item quantity="one">%1$s, %2$d запись</item>
+        <item quantity="few">%1$s, %2$d записи</item>
+        <item quantity="many">%1$s, %2$d записей</item>
+        <item quantity="other">%1$s, %2$d записи</item>
+    </plurals>
+    <plurals name="filters_apply">
+        <item quantity="one">Показать %d запись</item>
+        <item quantity="few">Показать %d записи</item>
+        <item quantity="many">Показать %d записей</item>
+        <item quantity="other">Показать %d записи</item>
+    </plurals>
+    <plurals name="backup_imported">
+        <item quantity="one">Добавлена %d запись</item>
+        <item quantity="few">Добавлено %d записи</item>
+        <item quantity="many">Добавлено %d записей</item>
+        <item quantity="other">Добавлено %d записи</item>
+    </plurals>
+    <string name="section_drinks">Коллекция</string>
+    <string name="section_recipes">Коктейли</string>
+    <plurals name="recipe_count">
+        <item quantity="one">%d рецепт</item>
+        <item quantity="few">%d рецепта</item>
+        <item quantity="many">%d рецептов</item>
+        <item quantity="other">%d рецепта</item>
+    </plurals>
+    <string name="search_recipe_placeholder">Найти коктейль</string>
+    <string name="category_cocktail">Коктейли</string>
+    <string name="empty_category_add_cocktail">Добавить коктейль</string>
+    <string name="empty_cocktail_title">Ваш первый коктейль</string>
+    <string name="empty_cocktail_text">Сохраните рецепт: ингредиенты, пропорции и способ приготовления.</string>
+    <string name="cocktail_new">Новый коктейль</string>
+    <string name="cocktail_edit">Коктейль</string>
+    <string name="cocktail_ingredients">Ингредиенты</string>
+    <string name="cocktail_ingredient_name">Ингредиент</string>
+    <string name="cocktail_ingredient_amount">Количество</string>
+    <string name="cocktail_ingredient_amount_hint">кол-во</string>
+    <string name="cocktail_remove_ingredient">Удалить ингредиент %1$d</string>
+    <string name="cocktail_name_hint">Например, Негрони</string>
+    <string name="cocktail_preparation">Приготовление</string>
+    <string name="cocktail_preparation_hint">Опишите, как приготовить коктейль</string>
+</resources>

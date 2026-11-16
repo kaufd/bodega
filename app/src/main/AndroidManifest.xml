@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Разрешение CAMERA не нужно: снимает стороннее приложение камеры (ACTION_IMAGE_CAPTURE).
+         Объявленное здесь, оно стало бы обязательным и для нас — лишний запрос пользователю. -->
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+
+    <!-- Только для распознавания этикеток через LLM: выключено по умолчанию,
+         включается в настройках вводом ключа. Всё остальное работает офлайн. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Журнал, настройки и фотографии остаются на устройстве: облачный бэкап
+         выключен (allowBackup), правила ниже дополнительно запрещают его на
+         Android 12+. Прямой перенос на новый телефон (device-transfer) разрешён —
+         это не выгрузка в облако, а переезд пользователя со своими данными. -->
+    <application
+        android:name=".BodegaApp"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Bodega"
+        android:supportsRtl="true"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <!-- adjustResize, а не выбор системы: без него окно под клавиатурой
+             сдвигается целиком (pan) и верхняя панель уезжает за экран.
+             С resize окно ужимается, а imePadding на форме поднимает поля. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

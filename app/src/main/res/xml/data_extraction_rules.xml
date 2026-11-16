@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+ (API 31). Облачный бэкап запрещён целиком: БД журнала, настройки и
+  фотографии этикеток остаются на устройстве, как обещает спецификация.
+
+  Прямой перенос на новое устройство (device-transfer) намеренно оставлен по
+  умолчанию — данные не уходят в облако, а иначе смена телефона означала бы
+  потерю журнала. Кэш (в том числе временные снимки камеры) системой не
+  переносится и не требует исключений.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+</data-extraction-rules>
